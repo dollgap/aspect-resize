@@ -826,7 +826,7 @@ function renderPreview() {
 
   const L = computeLayout(c.width, c.height, ph);
   $('#pvname').textContent = `${ph.w}×${ph.h} · ${shortName(ph.name)}`;
-  $('#qinfo').textContent = state.pad ? `여백 ${state.pad}%` : '여백 없음';
+  $('#qinfo').textContent = `여백 ${state.pad}%`;
   $('#pvtag').textContent = `${ratioLabel()} · ${frameSize(ph).join('×')}`;
 }
 
